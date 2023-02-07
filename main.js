@@ -1,14 +1,6 @@
 const likesCountElem = document.querySelector('span')
 const likeButton = document.querySelector('button')
 
-// TODO: 'Hi from server!', /likes, /update-likes
-// Render current likes count
-fetch('http://localhost:8000')
-  .then(response => response.text())
-  .then(currentLikesCount => {
-    likesCountElem.innerText = currentLikesCount
-  })
-
 // Update likes count on click
 likeButton.addEventListener('click', () => {
   // Обновить количество лайков
